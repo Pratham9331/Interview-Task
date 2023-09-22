@@ -1,0 +1,89 @@
+﻿@model IEnumerable<AutomapperWebTask.Models.EmployeeViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table" id="list">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EmployeeId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DepartmentId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DepartmentName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmployeeId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DepartmentId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DepartmentName)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+               @*  @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) | *@
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script>
+    var js = jQuery.noConflict(true);
+    js(document).ready(function () {
+
+        js.ajax({
+            url: '/Employee/Index',
+            error: function (errorResponse) {
+                console.log(errorResponse);
+                alert('Employee List Failed To Load');
+            },
+            success: function (response) {
+                var empList = response;
+                js('#list').dataTable({
+                    data: empList,
+                    columns: [
+                        { title: 'EmployeeId', data: 'EmployeeId' },
+                        { title: 'Name', data: 'Name' },
+                        { title: 'Address', data: 'Address' },
+                        { title: 'DepartmentName', data: 'DepartmentName' }
+                    ]
+                })
+            }
+        });
+    });
+</script>
+
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
