@@ -23,13 +23,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutomapperWebTask", "Automa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoMapperDAL", "AutoMapperDAL\AutoMapperDAL.csproj", "{2DC8497C-A66F-4AF0-8D86-F06F6CE82F09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finding Second Highest Number from Array", "Finding Second Highest Number from Array\Finding Second Highest Number from Array.csproj", "{F2B078D6-7B56-4155-8230-D341A901A67B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finding Second Highest Number from Array", "Finding Second Highest Number from Array\Finding Second Highest Number from Array.csproj", "{F2B078D6-7B56-4155-8230-D341A901A67B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finding Third Highest Number from Array", "Finding Third Highest Number from Array\Finding Third Highest Number from Array.csproj", "{39D0FC3F-B7ED-4996-8F49-3C2B670BE7D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finding Third Highest Number from Array", "Finding Third Highest Number from Array\Finding Third Highest Number from Array.csproj", "{39D0FC3F-B7ED-4996-8F49-3C2B670BE7D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finding PrimeNumber", "Finding PrimeNumber\Finding PrimeNumber.csproj", "{9C3D30AB-D099-4EEB-B24B-003C86F3A828}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finding PrimeNumber", "Finding PrimeNumber\Finding PrimeNumber.csproj", "{9C3D30AB-D099-4EEB-B24B-003C86F3A828}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonacciSeries", "FibonacciSeries\FibonacciSeries.csproj", "{F629F7D8-C722-43E7-A3A4-B96CB83FD451}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FibonacciSeries", "FibonacciSeries\FibonacciSeries.csproj", "{F629F7D8-C722-43E7-A3A4-B96CB83FD451}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Palindrome", "Palindrome\Palindrome.csproj", "{802E2030-2F54-46CA-A028-965E1DEF1322}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Armstrong Number", "Armstrong Number\Armstrong Number.csproj", "{5D72581F-B973-4F67-8CAD-193F7F8BD88A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetwinIndiaOutput", "NetwinIndiaOutput\NetwinIndiaOutput.csproj", "{5E9DC73F-772F-457E-9565-4D4D9BC32660}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +87,18 @@ Global
 		{F629F7D8-C722-43E7-A3A4-B96CB83FD451}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F629F7D8-C722-43E7-A3A4-B96CB83FD451}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F629F7D8-C722-43E7-A3A4-B96CB83FD451}.Release|Any CPU.Build.0 = Release|Any CPU
+		{802E2030-2F54-46CA-A028-965E1DEF1322}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{802E2030-2F54-46CA-A028-965E1DEF1322}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{802E2030-2F54-46CA-A028-965E1DEF1322}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{802E2030-2F54-46CA-A028-965E1DEF1322}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D72581F-B973-4F67-8CAD-193F7F8BD88A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D72581F-B973-4F67-8CAD-193F7F8BD88A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D72581F-B973-4F67-8CAD-193F7F8BD88A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D72581F-B973-4F67-8CAD-193F7F8BD88A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E9DC73F-772F-457E-9565-4D4D9BC32660}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E9DC73F-772F-457E-9565-4D4D9BC32660}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E9DC73F-772F-457E-9565-4D4D9BC32660}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E9DC73F-772F-457E-9565-4D4D9BC32660}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
