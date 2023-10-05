@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\css\NewFolder1\**" />
+    <Compile Remove="wwwroot\css\NewFolder2\**" />
+    <Content Remove="wwwroot\css\NewFolder1\**" />
+    <Content Remove="wwwroot\css\NewFolder2\**" />
+    <EmbeddedResource Remove="wwwroot\css\NewFolder1\**" />
+    <EmbeddedResource Remove="wwwroot\css\NewFolder2\**" />
+    <None Remove="wwwroot\css\NewFolder1\**" />
+    <None Remove="wwwroot\css\NewFolder2\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+</Project>
